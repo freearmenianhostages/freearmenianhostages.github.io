@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .email-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .email-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .email-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .email-form input, .email-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .email-form button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .email-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form class="email-form">
+        <h2>Send an Email</h2>
+        <label for="recipient">Recipient:</label>
+        <select id="recipient">
+            <option value="armorcoalition@gmail.com">armorcoalition@gmail.com</option>
+            <option value="annagalstyan89@gmail.com">annagalstyan89@gmail.com</option>
+        </select>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" placeholder="First Name" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+
+        <button type="button" onclick="sendEmail()">Send Email</button>
+    </form>
+
+    <script>
+        function sendEmail() {
+            const recipient = document.getElementById('recipient').value;
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const body = `Hello world,\n\nName: ${firstName} ${lastName}`;
+
+            if (firstName && lastName) {
+                const mailtoLink = `mailto:${encodeURIComponent(recipient)}?subject=${encodeURIComponent('Message from Website')}&body=${encodeURIComponent(body)}`;
+                window.location.href = mailtoLink;
+            } else {
+                alert('Please fill out all fields before sending the email.');
+            }
+        }
+    </script>
+</body>
+</html>

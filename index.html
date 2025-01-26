@@ -15,53 +15,55 @@
             margin: 0;
         }
         .email-form {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: #000;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
             width: 100%;
-            max-width: 400px;
+            max-width: 600px;
+            color: #fff;
         }
         .email-form h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
+            margin-bottom: 25px;
+            font-size: 28px;
+            color: #fff;
         }
         .email-form label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             font-weight: bold;
+            color: #fff;
         }
         .email-form input, .email-form select {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            padding: 14px;
+            margin-bottom: 20px;
+            border: 1px solid #444;
+            border-radius: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        .email-form input::placeholder {
+            color: #ccc;
         }
         .email-form button {
-            background-color: #007BFF;
+            background-color: #0056b3;
             color: #fff;
             border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
+            padding: 14px 22px;
+            border-radius: 10px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
         }
         .email-form button:hover {
-            background-color: #0056b3;
+            background-color: #007BFF;
         }
     </style>
 </head>
 <body>
     <form class="email-form">
-        <h2>Send an Email</h2>
-        <label for="recipient">Recipient:</label>
-        <select id="recipient">
-            <option value="armorcoalition@gmail.com">armorcoalition@gmail.com</option>
-            <option value="annagalstyan89@gmail.com">annagalstyan89@gmail.com</option>
-        </select>
-
-        <label for="firstName">First Name:</label>
+        <h2>DEMAND OBSERVERS AT THE BOGUS TRIALS OF ARMENIAN HOSTAGES IN BAKU</h2>
+           <label for="firstName">First Name:</label>
         <input type="text" id="firstName" placeholder="First Name" required>
 
         <label for="lastName">Last Name:</label>
@@ -71,9 +73,7 @@
     </form>
 
     <script>
-        const allEmails = [
-                          'aaleyd@imf.org','abhisheik.dhawan@uncdf.org','adelju@wmo.int','pridolfi@worldbank.org','dallen@worldbank.org','isabel.riber@wto.org','ludivine.tamiotti@wto.org','adonia.ayebare@gmail.com','agnchair2022@gmail.com','ajoe@unfccc.int','alacerda@gcfund.org','alexandra.fong@un.org','alimalik.fsp@gmail.com','amamadzhanov@gcfund.org','amelia.stewart@wfp.org','amoehner@unfccc.int','amokssit@wmo.int','animesh.africa@gmail.com','animesh.kumar@un.org','arnaud@un.org','barbara.schoenberg@un.org','benjamin.schachter@un.org','caoki@thegef.org','cassie.flynn@undp.org','castellanos@un.org','castellanos@unglobalcompact.org','cbourgeo@imo.org','cdumas@iom.int','chair@ldc-climate.org','chewitt@wmo.int','chouchanicherfane@un.org','claudia.contreras@un.org','cristina.bueti@itu.int','csbi@unfccc.int','csbsta@unfccc.int','ctudenggongbu@unfccc.int','cuba_onu@cubanmission.com','dalila.hamou@wipo.int','dkumar@unfccc.int','dlagdameo@unfccc.int','dmitry.mariyasin@un.org','donlon@un.org','dvesligaj@unfccc.int','ebuckley@imf.org','efida@wmo.int','eisaku.toda@un.org','eisaku.toda@gmail.com','elaine.genser@un.org','elizabeth.paturzo@un.org','embajador_onu@cubanmission.com','emshitima40@gmail.com','eneida.rabdishta@turizmi.gov.al','external-relations@unfccc.int','ezzarqui@un.org','f.perusini@ifad.org','fatumanava@samoanymission.ws','fodhiambo@unfccc.int','germani@un.org','gernot.laganda@wfp.org','edcorrespondence@wfp.org','gjoshi@unfccc.int','gueye@ilo.org','h.h.j.vreuls@minezk.nl','h.paillere@iaea.org','hieber-girardet@un.org','hmaseko@unfccc.int','info.unmissionny@mfaft.gov.jm','ispuscas@iom.int','j.barbiere@unesco.org','jennifer.baumwoll@undp.org','joseeduardo.alatorre@cepal.org','k.isensee@unesco.org','kate.hancock@dcceew.gov.au','kristine.fitzpatrick@un.org','ksmith@unfccc.int','ksuassuna@intracen.org','lcipp@unfccc.int','ldcchairoffice@ldc-climate.org','lpollier@unfccc.int','maierom@who.int','mario.castrogrande@itu.int','martell@un.org','marylene.beau@un.org','mcarmen1865@gmail.com','meg.seki@un.org','a.mishra@unesco.org','c.nordheim@unesco.org','raf.tuts@unhabitat.org','bernhard.barth@un.org','yonetani@unhcr.org','gnarasimhan@unicef.org','ldemel@unicef.org','heba.mariey@un.org','a.metelitsa@unido.org','climatechange@unido.org','manuel.rosini@un.org','nvwede-obahor@undp.org','angus.mackay@unitar.org','agmackay2000@yahoo.com','hanny.cuevabeteta@un.org','ghai1@un.org','sergie@un.org','aikaterinis@unops.org','info@unops.org','dunja.krause@un.org','paramita.dutta@un.org','ram.adwan@unrwa.org','ramikadwan@gmail.com','zissener@ehs.unu.edu','venge.nyirongo@unwomen.org','dglaesser@unwto.org','zurosevic@unwto.org','rruffo@unwto.org','vftrapa@unwto.org','james.hale@upu.int','mistir.uneca@un.org','monicaschlottau@gmail.com','mpereira@iom.int','munir.nabeel@gmail.com','murayac@un.org','nams@un.org','escap-edd@un.org','nikolova@un.org','narregui@imf.org','niklas.hagelberg@un.org','ocb-director@fao.org','officeenv@icao.int','pacie04@yahoo.co.uk','parumugam@unfccc.int','peyre@unfccc.int','press@unfccc.int','ptorres@unfccc.int','rbubniene@unfccc.int','rhoenders@imo.org','rmanandhar@unfccc.int','rosemadiouf@gmail.com','rpayo@unfccc.int','sadekt@un.org','salame1@un.org','samoanymission@outlook.com','santiago.lorenzo@cepal.org','sapatnekar@un.org','secretaria.ejecutiva@cepal.org','secretariat@unfccc.int','secretarytotheboard@gcfund.org','shreya.kumra@un.org','sophie.de.coninck@uncdf.org','sstiell@unfccc.int','syeda.showkat@un.org','takada@un.org','tamar.vanstraten@un.org','tasfias@unops.org','tasfias@unops.org','tina.kobilsek@gov.si','tristan.tyrrell@un.org','tristan.tyrrell@cbd.int','secretariat@cbd.int','annie.cung@un.org','annie.cung@cbd.int','ttanaka@icao.int','u4ssc@itu.int','ulises@citma.gob.cu','vgoisferreira@unfccc.int','vtrusca@unfccc.int','w.huang@iaea.org','xscanlon@unccd.int','zhekovasvetlana@gmail.com','zommers@un.org'
-        ];
+        const allEmails = ['rzy@mrecic.gov','rzy@mrecic.gov.ar','eazer@mrecic.gov.ar','baku-ob@bmeia.gv.at','azerbaijan@mfa.gov.by','embassy.baku@diplobel.fed.be','bakubrasemb@gmail.com','Embassy.Baku@mfa.bg','chinaemb_az@mfa.gov.cn','cbaku@cancilleria.gov.co','eazerbaiyan@cancilleria.gov.co','embcr-az@rree.go.cr','croemb.baku@mvep.hr','baku@embassy.mzv.cz','egyptembassybaku@yahoo.com','jaap.ora@mfa.ee','estonia.baku@mfa.ee','presse.bakou-amba@diplomatie.gouv.fr','mission.bku@mfa.gov.hu','amb.baku@mea.gov.in','hoc.baku@mea.gov.in','baku.kbri@kemlu.go.id','info@baku.mfa.gov.il','ambassadorsec@baku.mfa.gov.il','info@bk.mofa.go.jp','baku@fm.gov.jo','baku@mfa.kz','baku@mofa.gov.kw','sec@kuwaitembassy.az','kgembassy.az@mfa.gov.kg','aaqiboverseas@yahoo.com','info@aaqiboverseas.com','amb.az@urm.lt','mwbaku@kln.gov.my','shaheenshah.rahimi.010@gmail.com','shan_rabi@yahoo.com','embazerbaiyan@sre.gob.mx','amb.moroccoaz@gmail.com','bak@minbuza.nl','shaloomjohnson777@gmail.com','emb.baku@mfa.no','parepbaku@yahoo.com','parepbaku@mofa.gov.pk','palembaz@gmail.com','Shahidkhan07821@gmail.com','embaperu-baku@rree.gob.pe','baku@mne.pt','serbianembassy.baku@azeurotel.com','espanazerbaiyan@gmail.com','ambassaden.baku@gov.se','embassy.rtra@gmail.com','tajembbaku@mfa.tj','consulate.ganja@mfa.gov.tr','consulate.nakhchivan@mfa.gov.tr','embassy.baku@mfa.gov.tr','turkcons.nahchivan@mfa.gov.tr','emb_az@mfa.gov.ua','baku@mofa.gov.ae','bakuemb@mofaic.gov.ae','generalenquiries.baku@fco.gov.uk','office@uzembassy.az'        ];
 
     function getRandomRecipients(emailArray, numberOfRecipients) {
     const shuffled = emailArray.sort(() => 0.5 - Math.random());
@@ -85,10 +85,14 @@
     const firstName = document.getElementById("firstName").value; 
     const lastName= document.getElementById("lastName").value;
 
-    const selectedEmails = getRandomRecipients(allEmails, 50);
-    const mailtoLink = `mailto:?cc=armorcoalition@gmail.com&bcc=${selectedEmails.join(',')}&subject=Boycott%20COP29:%20Stop%20Greenwashing%20Genocide&body=Greetings%2C%0A%0AIt%20has%20come%20to%20my%20attention%20that%20your%20institution%20is%20sending%20a%20delegation%20to%20COP29%20in%20Baku.%20I%20implore%20you%20to%20withdraw%20your%20participation%20and%20instead%20lead%20by%20example%20in%20standing%20against%20this%20genocide%20greenwashing%20convention.%0A%0AAzerbaijan%20has%20a%20deplorable%20record%20of%20human%20rights%20violations%2C%20crimes%20against%20humanity%2C%20and%20severe%20environmental%20damage.%20As%20recently%20as%20last%20year%2C%20more%20than%20120%2C000%20indigenous%20Armenians%20fled%20their%20ancestral%20lands%20of%20Artsakh%20(Nagorno-Karabakh)%20after%20a%20nine-month-long%20inhumane%20blockade%2C%20which%20culminated%20in%20an%20indiscriminate%20massacre%20on%20September%2019%2C%202023.%20According%20to%20the%20Genocide%20Convention%20adopted%20by%20the%20UN%2C%20genocide%20is%20defined%20as%20%22acts%20committed%20with%20intent%20to%20destroy%2C%20in%20whole%20or%20in%20part%2C%20a%20national%2C%20ethnical%2C%20racial%2C%20or%20religious%20group%2C%22%20including%20actions%20such%20as%20killing%20members%20of%20the%20group%2C%20causing%20serious%20bodily%20or%20mental%20harm%2C%20and%20deliberately%20inflicting%20living%20conditions%20intended%20to%20bring%20about%20the%20group's%20physical%20destruction.%20Azerbaijan's%20conduct%20clearly%20falls%20within%20this%20definition%20and%20has%20been%20widely%20condemned%20by%20leading%20human%20rights%20organizations%20and%20international%20bodies.%20If%20any%20additional%20clarity%20is%20needed%2C%20Azerbaijan%E2%80%99s%20president%2C%20Aliyev%2C%20has%20stated%2C%20'If%20the%20ethnic%20Armenians%20do%20not%20leave%20our%20lands%20of%20their%20own%20free%20will%2C%20we%20will%20chase%20them%20away%20like%20dogs%2C%20and%20we%20are%20doing%20that.'%20What's%20more%2C%20fossil%20fuels%20make%20up%2090%25%20of%20Azerbaijan's%20exports%3B%20is%20this%20really%20the%20country%20that%20should%20be%20hosting%20COP29%20this%20year%3F%0A%0AIn%20light%20of%20this%2C%20I%20strongly%20urge%20you%20to%3A%0A%0A-Withdraw%20from%20COP29%20immediately.%0A-%20Publicly%20condemn%20the%20event%20as%20an%20endorsement%20of%20actions%20that%20contravene%20fundamental%20human%20rights%20and%20environmental%20principles.%20In%20your%20condemnation%2C%20you're%20highly%20encouraged%20to%20express%20support%20for%3A%0A%0A1.%20The%20immediate%20release%20of%20all%20Armenian%20prisoners%20of%20war%20and%20hostages.%0A2.%20The%20guaranteed%20right%20for%20indigenous%20Armenians%20to%20return%20to%20and%20live%20safely%20in%20their%20ancestral%20lands%20in%20Artsakh.%0A3.%20An%20agreement%20free%20from%20expansionist%20demands%20and%20the%20return%20of%20250%20km%C2%B2%20of%20internationally%20recognized%20Armenian%20territories%20under%20Azeri%20occupation.%0A%0AWe%20will%20not%20stay%20silent%20in%20the%20face%20of%20the%20existential%20threats%20to%20Armenia%20posed%20by%20the%20Azerbaijani%20regime%2C%20which%20is%20exploiting%20COP29%20as%20a%20platform%20to%20legitimize%20its%20past%20and%20ongoing%20genocidal%20actions%20before%20the%20international%20community.%20This%20impunity%20must%20end%20now.%20I%20hope%20you%20will%20choose%20to%20raise%20our%20voice%20rather%20than%20be%20complicit.%0A%0AI%20appreciate%20your%20prompt%20attention%20to%20this%20matter%20and%20look%20forward%20to%20your%20response.%0A%0AThank%20you%2C%0A${firstName}%20${lastName}`;
-
-    window.open(mailtoLink);
+    const selectedEmails = getRandomRecipients(allEmails, 61);
+  if (firstName && lastName){
+    const mailtoLink = `mailto:?cc=armorcoalition@gmail.com&bcc=${selectedEmails.join(',')}&subject=Request%20for%20Embassy%20to%20Observe%20Trials%20of%20Armenian%20Detainees%20in%20Azerbaijan&body=Your%20Excellency%2C%0AI%20am%20writing%20to%20you%20as%20a%20concerned%20citizen%20against%20injustice%20everywhere%C2%A0regarding%20the%20trials%20of%20Armenian%20detainees%20in%20Azerbaijan%2C%20including%20prominent%20individuals%20such%20as%20Ruben%20Vardanyan%2C%20whose%20cases%20have%20been%20marred%20by%20significant%20violations%20of%20international%20legal%20standards.%0A%0AThe%20detainees%20face%20numerous%20fabricated%20charges%20under%20circumstances%20that%20suggest%20a%20lack%20of%20impartiality%20and%20adherence%20to%20due%20process.%20Azerbaijan%20has%20repeatedly%20been%20found%20in%20violation%20of%20the%20following%20international%20legal%20standards%3A%20the%20International%20Covenant%20on%20Civil%20and%20Political%20Rights%20%28ICCPR%29%2C%20Article%2014.1%3B%20the%20United%20Nations%20Convention%20Against%20Torture%20%28UNCAT%29%2C%20Article%2015%3B%20and%20the%20European%20Convention%20on%20Human%20Rights%20%28ECHR%29%2C%20Article%206.1.%C2%A0Reports%20from%20Amnesty%20International%2C%20Center%20for%20Truth%20and%20Justice%C2%A0and%20Human%20Rights%20Watch%2C%C2%A0Freedom%20House%C2%A0have%20documented%20systemic%20judicial%20flaws%20in%20Azerbaijan%2C%20including%20coerced%20confessions%20under%20torture%2C%20lack%20of%20transparency%2C%20and%20denial%20of%20adequate%20legal%20representation.%20Jared%C2%A0Genser%2C%20Managing%20Director%20of%20Perseus%20Strategies%2C%C2%A0and%20his%20legal%20team%2C%20who%20are%20defending%20Mr.%20Vardanyan%2C%20have%20similarly%20raised%20alarms%20about%20these%20violations%20and%20denied%20access%20to%20its%20client.%0A%0AIn%20light%20of%20these%20serious%20concerns%2C%20I%20respectfully%20request%20the%20following%20actions%3A%0A%0A1.%20Ensure%20Embassy%20attendance%20at%20the%20trials%20to%20observe%20and%20document%20proceedings%20for%20compliance%20with%20international%20legal%20standards.%0A2.%20Support%20access%20by%20human%20rights%20observers%20based%20in%20the%20state%20of%20your%20Embassy%2C%20including%20journalists%20and%20organizations.%0A3.%20Engage%20diplomatically%20with%20Azerbaijani%20authorities%20to%20advocate%20for%20fair%20trials%2C%20adequate%20legal%20representation%2C%20and%20humane%20treatment%20of%20detainees.%0A%0AThe%20Center%20for%20Truth%20and%20Justice%C2%A0has%20already%20submitted%20a%20request%20to%20observe%20these%20trials%2C%20but%20it%20remains%20unanswered.%20Their%20presence%2C%20along%20with%20other%20international%20monitors%2C%20is%20vital%20to%20ensure%20accountability%20and%20fairness%20in%20these%20proceedings.%0A%0AThank%20you%20for%20your%20attention%20to%20this%20matter.%C2%A0%0AYours%20sincerely%2C%0A${firstName}%20${lastName}`;
+window.location.href = mailtoLink;
+}else {
+alert('Please fill out all fields before sending the email.');
+}
+    }
     </script>
 </body>
 </html>
